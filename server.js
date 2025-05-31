@@ -6,6 +6,8 @@ const read = require('./modules/readfile');
 
 const routes = require('./modules/routes');
 
+const port = process.env.PORT || 4000 
+
 const server = http.createServer((req, res) => {
 
     const parsedUrl = url.parse(req.url, true);
@@ -42,7 +44,7 @@ const server = http.createServer((req, res) => {
     routes(req, res);
 });
 
-server.listen(8000, 'localhost', () => {
-    console.log('Listening for requests on port 8000')
+server.listen(port, 'localhost', () => {
+    console.log(`Listening for requests on port ${port}`)
 });
 
