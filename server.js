@@ -44,7 +44,7 @@ const server = http.createServer((req, res) => {
     routes(req, res);
 });
 
-server.listen(port, 'localhost', () => {
+server.listen(port, () => {
     console.log(`Listening for requests on port ${port}`)
 });
 
