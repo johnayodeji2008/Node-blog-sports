@@ -6,7 +6,7 @@ const read = require('./modules/readfile');
 
 const routes = require('./modules/routes');
 
-const port = process.env.PORT || 4000 
+const port = process.env.PORT || 8080; 
 
 const server = http.createServer((req, res) => {
 
