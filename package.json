@@ -1,0 +1,15 @@
+{
+  "name": "node-blog",
+  "version": "1.0.0",
+  "description": "Simple blogging website using node js for the backend and server side logic",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "John Ayodeji",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

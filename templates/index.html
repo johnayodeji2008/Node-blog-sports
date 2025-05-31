@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NODE SPORTS</title>
+  <link rel="icon" href="/templates/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+  <body style="margin:0; font-family:Segoe UI, sans-serif; background-color:#f5f5f5;">
+  <header style="background:#6a0f0f; padding:1rem; color:white; text-align:center;">
+    <h1 style="margin:0;">Node Blog</h1>
+  </header>
+  <main id="posts-container" style="display:grid; gap:1rem; padding:1rem;">
+    {%POST-LIST%}
+  </main>
+  <script src="script.js"></script>
+
+  <style>
+    @media (min-width: 768px) {
+      #posts-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 767px) {
+      #posts-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</body>
+</body>
+</html>
